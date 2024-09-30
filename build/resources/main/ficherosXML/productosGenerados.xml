@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<productos>
+    <producto>
+        <nombre>Cereales</nombre>
+        <precio>3.45</precio>
+    </producto>
+    <producto>
+        <nombre>Monster</nombre>
+        <precio>1.45</precio>
+    </producto>
+</productos>

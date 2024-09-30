@@ -1,0 +1,15 @@
+<productos>
+    <producto categoria="alimentacion">
+        <nombre>Cereales</nombre>
+        <precio>3.45</precio>
+    </producto>
+    <producto>
+        <nombre>Colacao</nombre>
+        <precio>1.45</precio>
+    </producto>
+    <producto>
+        <nombre>Agua mineral</nombre>
+        <precio>1.00</precio>
+    </producto>
+</productos>
+
