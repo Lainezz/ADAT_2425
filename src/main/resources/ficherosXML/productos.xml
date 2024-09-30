@@ -1,27 +1,15 @@
 <productos>
     <producto categoria="alimentacion">
         <nombre>Cereales</nombre>
-        <precio>
-            <euros>3€</euros>
-            <libras>2L</libras>
-            <dolares>4S</dolares>
-        </precio>
+        <precio>4</precio>
     </producto>
     <producto>
         <nombre>Colacao</nombre>
-        <precio>
-            <euros>3€</euros>
-            <libras>2L</libras>
-            <dolares>4S</dolares>
-        </precio>
+        <precio>2</precio>
     </producto>
     <producto>
         <nombre>Agua mineral</nombre>
-        <precio>
-            <euros>3€</euros>
-            <libras>2L</libras>
-            <dolares>4S</dolares>
-        </precio>
+        <precio>1</precio>
     </producto>
 </productos>
 
