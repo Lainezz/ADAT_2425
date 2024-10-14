@@ -75,9 +75,6 @@ class XMLRepository {
         transformer.transform(source, result)
 
 
-
-
-
     }
 
     private fun parseXML(rutaXML: Path): Document {
