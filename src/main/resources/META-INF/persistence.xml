@@ -23,5 +23,27 @@
         </properties>
 
     </persistence-unit>
+    <persistence-unit name="unidadInstituto" transaction-type="RESOURCE_LOCAL">
+        <class>com.es.tema2.orm.hibernateInstituto.model.Departamento</class>
+        <class>com.es.tema2.orm.hibernateInstituto.model.Director</class>
+        <class>com.es.tema2.orm.hibernateInstituto.model.Instituto</class>
+        <class>com.es.tema2.orm.hibernateInstituto.model.Inspector</class>
+        <class>com.es.tema2.orm.hibernateInstituto.model.Proveedor</class>
+
+        <properties>
+            <!-- Driver -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <!-- URL -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/institutobd" />
+
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+        </properties>
+
+    </persistence-unit>
 
 </persistence>
