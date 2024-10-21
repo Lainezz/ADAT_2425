@@ -6,10 +6,6 @@ import jakarta.persistence.*
 @Table(name = "inspectores")
 class Inspector(
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long?,
-
     @Column(name = "dni", unique = true, nullable = false)
     val dni: String,
 
@@ -17,7 +13,11 @@ class Inspector(
     val nombre: String,
 
     @OneToMany(cascade = [CascadeType.ALL])
-    val instituto: Instituto?
+    val instituto: Instituto?,
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long?,
 
 
 

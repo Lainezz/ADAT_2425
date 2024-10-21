@@ -6,10 +6,6 @@ import jakarta.persistence.*
 @Table(name = "departamentos")
 class Departamento(
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long?,
-
     @Column(name = "nombre", nullable = false, length = 50)
     val nombre: String,
 
@@ -18,7 +14,11 @@ class Departamento(
 
     @ManyToOne(cascade = [CascadeType.ALL])
     @JoinColumn(name = "id_instituto")
-    val instituto: Instituto?
+    val instituto: Instituto?,
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long?,
 
 ) {
 }

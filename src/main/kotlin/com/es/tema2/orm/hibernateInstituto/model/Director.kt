@@ -6,10 +6,6 @@ import jakarta.persistence.*
 @Table(name = "directores")
 class Director(
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long?,
-
     @Column(name = "dni", nullable = false, length = 10, unique = false)
     val dni: String,
 
@@ -17,7 +13,11 @@ class Director(
     val nombre: String,
 
     @OneToOne(mappedBy = "director", cascade = [CascadeType.ALL])
-    val instituto: Instituto?
+    val instituto: Instituto?,
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long?,
 
 
 

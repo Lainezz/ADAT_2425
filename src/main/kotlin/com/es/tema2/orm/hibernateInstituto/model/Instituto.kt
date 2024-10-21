@@ -6,11 +6,7 @@ import kotlin.jvm.Transient
 
 @Entity
 @Table(name = "institutos")
-data class Instituto(
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long?,
+class Instituto(
 
     @Column(name = "nombre", nullable = false, length = 50)
     val nombre: String,
@@ -37,7 +33,11 @@ data class Instituto(
         joinColumns = [JoinColumn(name="id_instituto")],
         inverseJoinColumns = [JoinColumn(name="id_proveedor")]
     )
-    val proveedores: List<Proveedor>?
+    val proveedores: List<Proveedor>?,
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long?,
 
 
 ) {
