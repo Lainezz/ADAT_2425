@@ -4,8 +4,9 @@
              version="2.0">
 
     <persistence-unit name="unidadMySQL" transaction-type="RESOURCE_LOCAL">
-        <class>com.es.tema2.orm.hibernateIntroduccion.Empleado</class>
-        <class>com.es.tema2.orm.hibernateIntroduccion.Departamento</class>
+        <class>com.es.tema2.orm.hibernateProducto.Usuario</class>
+        <class>com.es.tema2.orm.hibernateProducto.Proveedor</class>
+        <class>com.es.tema2.orm.hibernateProducto.Producto</class>
 
         <properties>
             <!-- Driver -->
