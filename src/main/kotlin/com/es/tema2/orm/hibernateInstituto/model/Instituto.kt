@@ -17,7 +17,7 @@ class Instituto(
     @Transient
     val nEstudiantes: Int,
 
-    @OneToMany(cascade = [CascadeType.ALL], mappedBy = "instituto")
+    @OneToMany(cascade = [CascadeType.ALL], mappedBy = "institutos")
     val dptos: List<Departamento>?,
 
     @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.LAZY, mappedBy = "instituto")

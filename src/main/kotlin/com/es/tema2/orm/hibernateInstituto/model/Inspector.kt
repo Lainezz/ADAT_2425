@@ -12,8 +12,9 @@ class Inspector(
     @Column(name = "nombre")
     val nombre: String,
 
-    @OneToMany(cascade = [CascadeType.ALL])
-    val instituto: Instituto?,
+    @ManyToOne(cascade = [CascadeType.ALL])
+    @JoinColumn(name = "id_instituto")
+    val institutos: Instituto?,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

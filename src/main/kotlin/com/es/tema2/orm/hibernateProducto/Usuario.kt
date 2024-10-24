@@ -10,10 +10,10 @@ import jakarta.persistence.Table
 class Usuario (
 
     @Id
-    val nombreUsuario: String,
+    var nombreUsuario: String,
 
     @Column(name = "password", nullable = false, length = 20)
-    val password: String
+    var password: String
 
 ) {
 }

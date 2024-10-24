@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManager
 
 fun main() {
 
-
+/*
     val em: EntityManager = HibernateUtils.getEntityManager("unidadInstituto")
 
     val dptos = mutableListOf<Departamento>()
@@ -29,5 +29,5 @@ fun main() {
 
     HibernateUtils.closeEntityManager(em)
 
-
+*/
 }
