@@ -12,7 +12,8 @@ object HibernateUtils {
         return if(this::emf.isInitialized && emf.isOpen) {
             emf;
         } else {
-            Persistence.createEntityManagerFactory(namePersistenceUnit)
+            emf = Persistence.createEntityManagerFactory(namePersistenceUnit)
+            emf
         }
     }
 
